@@ -1,0 +1,41 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          aad-b2c:
+            provider: aad-b2c-provider
+            client-id: 0ee5f048-259e-4b5a-aa64-39ebcd958e92
+            client-secret: ak_8Q~Fp14LWYJ2RnhpGaD_h86hzul-oWH1oKcgg
+            authorization-grant-type: authorization_code
+            redirect-uri: http://localhost:8099/login/oauth2/code/aad-b2c #'{baseUrl}/login/oauth2/code/{registrationId}'
+            scope: openid
+        provider:
+          aad-b2c-provider:
+            #issuer-uri: https://alaob2c.b2clogin.com/12656ce2-2c9f-44b3-8969-6f30c9d4f105/v2.0/
+            authorization-uri: https://alaob2c.b2clogin.com/alaob2c.onmicrosoft.com/b2c_1_signupsignin1/oauth2/v2.0/authorize
+            token-uri: https://alaob2c.b2clogin.com/alaob2c.onmicrosoft.com/b2c_1_signupsignin1/oauth2/v2.0/token
+            jwk-set-uri: https://alaob2c.b2clogin.com/alaob2c.onmicrosoft.com/b2c_1_signupsignin1/discovery/v2.0/keys
+
+#https://alaob2c.b2clogin.com/alaob2c.onmicrosoft.com/B2C_1_SignUpSignIn1/v2.0/.well-known/openid-configuration
+      
+#spring:
+#  cloud:
+#    azure:
+#      active-directory:
+#        b2c:
+#          enabled: true
+#          base-uri: https://alaob2c.b2clogin.com/alaob2c.onmicrosoft.com/
+#          credential:
+#            client-id: 0ee5f048-259e-4b5a-aa64-39ebcd958e92
+#            client-secret: 'ak_8Q~Fp14LWYJ2RnhpGaD_h86hzul-oWH1oKcgg'
+#          login-flow: sign-up-or-sign-in
+#          logout-success-url: http://localhost:8099
+#          user-flows:
+#            sign-up-or-sign-in: SignUpSignIn1
+#            profile-edit: ProfileEditing1
+#            password-reset: PasswordReset1
+#          #user-name-attribute-name: <your-user-name-attribute-name> 
+
+server:
+  port: 8099
