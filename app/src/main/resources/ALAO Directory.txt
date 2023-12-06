@@ -1,0 +1,15 @@
+ALAO Directory:
+
+users:
+	admin: b2cAdmin1@andreffalaogmail.onmicrosoft.com pKVKTCurw0kAGPv
+
+AzureAD B2C:
+	domainName: alaob2c.onmicrosoft.com 
+	tenentID: 93f8d2e1-f621-4eec-af7e-b659be4d0255
+	apps: 
+		name: webapp1
+		appId: 0ee5f048-259e-4b5a-aa64-39ebcd958e92
+		secret: 
+			name: webapp1-key-01 (6 meses)
+			id: 8925ae90-832e-4612-8607-d05a1cab9192
+			value: ak_8Q~Fp14LWYJ2RnhpGaD_h86hzul-oWH1oKcgg
