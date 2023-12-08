@@ -5,19 +5,19 @@ spring:
         registration:
           aad-b2c:
             provider: aad-b2c-provider
-            client-id: 0ee5f048-259e-4b5a-aa64-39ebcd958e92
-            client-secret: ak_8Q~Fp14LWYJ2RnhpGaD_h86hzul-oWH1oKcgg
+            client-id: 6685ecd6-cacc-4738-8eac-7007aa78335d
+            client-secret: RhG8Q~A9Q5C3EjgbHRfjgZEyHuBMUQCjFT34abt9
             authorization-grant-type: authorization_code
             redirect-uri: http://localhost:8099/login/oauth2/code/aad-b2c #'{baseUrl}/login/oauth2/code/{registrationId}'
             scope: openid
         provider:
           aad-b2c-provider:
-            #issuer-uri: https://alaob2c.b2clogin.com/12656ce2-2c9f-44b3-8969-6f30c9d4f105/v2.0/
-            authorization-uri: https://alaob2c.b2clogin.com/alaob2c.onmicrosoft.com/b2c_1_signupsignin1/oauth2/v2.0/authorize
-            token-uri: https://alaob2c.b2clogin.com/alaob2c.onmicrosoft.com/b2c_1_signupsignin1/oauth2/v2.0/token
-            jwk-set-uri: https://alaob2c.b2clogin.com/alaob2c.onmicrosoft.com/b2c_1_signupsignin1/discovery/v2.0/keys
+            #issuer-uri: https://alao2b2c.b2clogin.com/5f2001c8-53b2-4a0b-9888-a14a809ee421/v2.0/
+            authorization-uri: https://alao2b2c.b2clogin.com/alao2b2c.onmicrosoft.com/b2c_1_singin_singup_webapp2/oauth2/v2.0/authorize
+            token-uri: https://alao2b2c.b2clogin.com/alao2b2c.onmicrosoft.com/b2c_1_singin_singup_webapp2/oauth2/v2.0/token
+            jwk-set-uri: https://alao2b2c.b2clogin.com/alao2b2c.onmicrosoft.com/b2c_1_singin_singup_webapp2/discovery/v2.0/keys
 
-#https://alaob2c.b2clogin.com/alaob2c.onmicrosoft.com/B2C_1_SignUpSignIn1/v2.0/.well-known/openid-configuration
+#https://alao2b2c.b2clogin.com/alao2b2c.onmicrosoft.com/b2c_1_singin_singup_webapp2/v2.0/.well-known/openid-configuration
       
 #spring:
 #  cloud:
@@ -25,7 +25,7 @@ spring:
 #      active-directory:
 #        b2c:
 #          enabled: true
-#          base-uri: https://alaob2c.b2clogin.com/alaob2c.onmicrosoft.com/
+#          base-uri: https://alao2b2c.b2clogin.com/alao2b2c.onmicrosoft.com/
 #          credential:
 #            client-id: 0ee5f048-259e-4b5a-aa64-39ebcd958e92
 #            client-secret: 'ak_8Q~Fp14LWYJ2RnhpGaD_h86hzul-oWH1oKcgg'
