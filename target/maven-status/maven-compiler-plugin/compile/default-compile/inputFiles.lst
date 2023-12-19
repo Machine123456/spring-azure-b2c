@@ -1,0 +1,14 @@
+D:\Projects\spring-aad\aad-client\src\main\java\com\demo\aadclient\data\model\Role.java
+D:\Projects\spring-aad\aad-client\src\main\java\com\demo\aadclient\AadClientApplication.java
+D:\Projects\spring-aad\aad-client\src\main\java\com\demo\aadclient\data\dto\ProductResponse.java
+D:\Projects\spring-aad\aad-client\src\main\java\com\demo\aadclient\data\dto\ProductRequest.java
+D:\Projects\spring-aad\aad-client\src\main\java\com\demo\aadclient\data\repository\AuthorityRepository.java
+D:\Projects\spring-aad\aad-client\src\main\java\com\demo\aadclient\data\model\Authority.java
+D:\Projects\spring-aad\aad-client\src\main\java\com\demo\aadclient\data\ApplicationStartupRunner.java
+D:\Projects\spring-aad\aad-client\src\main\java\com\demo\aadclient\data\repository\RoleRepository.java
+D:\Projects\spring-aad\aad-client\src\main\java\com\demo\aadclient\security\CustomOidcUserService.java
+D:\Projects\spring-aad\aad-client\src\main\java\com\demo\aadclient\data\model\Product.java
+D:\Projects\spring-aad\aad-client\src\main\java\com\demo\aadclient\data\repository\ProductRepository.java
+D:\Projects\spring-aad\aad-client\src\main\java\com\demo\aadclient\security\WebSecurityConfiguration.java
+D:\Projects\spring-aad\aad-client\src\main\java\com\demo\aadclient\data\model\UserClient.java
+D:\Projects\spring-aad\aad-client\src\main\java\com\demo\aadclient\data\repository\UserClientRepository.java
