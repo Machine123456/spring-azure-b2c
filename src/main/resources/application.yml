@@ -3,34 +3,22 @@ spring:
     oauth2:
       client:
         registration:
-          aad-b2c-iodc: # ClientAppAAD
+          aad-b2c: # ClientAppAAD
             provider: aad-b2c-provider
-            client-id: 78246eda-6639-4da9-bdd3-d1cb0bd878c0
-            client-secret: LG.8Q~X-qLAiAG1IFt4bjDtxx4vuMo7A-XcDMdu3
+            client-id: <client-id>
+            client-secret: <secret>
             authorization-grant-type: authorization_code #client_credentials on_behalf_of 
             redirect-uri: http://localhost:8098/login/oauth2/code/aad-b2c #'{baseUrl}/login/oauth2/code/{registrationId}'
             scope: 
               - openid # id token
-              - offline_access # refresh token
-              - https://alao2b2c.onmicrosoft.com/1abe35a2-51cd-42a9-9a6f-ceab1c4e16b9/updateuser # access token for UserApiAAD resource
-              - https://alao2b2c.onmicrosoft.com/1abe35a2-51cd-42a9-9a6f-ceab1c4e16b9/readuser
+              #- offline_access # refresh token
+              #- https://alao2b2c.onmicrosoft.com/1abe35a2-51cd-42a9-9a6f-ceab1c4e16b9/updateuser # access token for UserApiAAD resource
+              #- https://alao2b2c.onmicrosoft.com/1abe35a2-51cd-42a9-9a6f-ceab1c4e16b9/readuser
         provider:
           aad-b2c-provider:
-            authorization-uri: https://alao2b2c.b2clogin.com/alao2b2c.onmicrosoft.com/b2c_1_singin_singup_webapp2/oauth2/v2.0/authorize
-            token-uri: https://alao2b2c.b2clogin.com/alao2b2c.onmicrosoft.com/b2c_1_singin_singup_webapp2/oauth2/v2.0/token
-            jwk-set-uri: https://alao2b2c.b2clogin.com/alao2b2c.onmicrosoft.com/b2c_1_singin_singup_webapp2/discovery/v2.0/keys
-  datasource:
-      driver-class-name: com.mysql.cj.jdbc.Driver
-      url: jdbc:mysql://database-1.chg7ujdhhts7.eu-west-3.rds.amazonaws.com:3306/aad-client?createDatabaseIfNotExist=true
-      username: root
-      password: rootroot
-  jpa:
-      hibernate:
-          ddl-auto: update #create-drop
-      show-sql: false
-      properties:
-          hibernate:
-              dialect: org.hibernate.dialect.MySQLDialect
+            authorization-uri: https://<tenantName>.b2clogin.com/<tenantName>.onmicrosoft.com/<user_flow>/oauth2/v2.0/authorize
+            token-uri: https://<tenantName>.b2clogin.com/<tenantName>.onmicrosoft.com/<user_flow>/oauth2/v2.0/token
+            jwk-set-uri: https://<tenantName>.b2clogin.com/<tenantName>.onmicrosoft.com/<user_flow>/discovery/v2.0/keys
 
 server:
   port: 8098
